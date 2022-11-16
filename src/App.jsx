@@ -9,7 +9,7 @@ function App() {
 
   parragrah.forEach(data => {
     data.addEventListener("dragstart", e => {
-      //console.log("start handle: " + data.innerText)
+      console.log("start handle: " + data.innerText)
       data.classList.add('addColor')
       e.dataTransfer.setData("id", data.id)
     })
@@ -22,13 +22,13 @@ function App() {
   sections.forEach(data => {
     data.addEventListener("dragover", e => {
       e.preventDefault()
-       //console.log("drag over")
+       console.log("drag over")
     })
 
     data.addEventListener("drop", e => {
       //console.log("Drop")
       const id_p =  e.dataTransfer.getData("id")
-      //console.log(id_p)
+      console.log(id_p)
       const transferP = document.getElementById(id_p)
       data.appendChild(transferP)
     })
