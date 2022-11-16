@@ -1,0 +1,15 @@
+.section {
+    background-color: cadetblue;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.parraf {
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.parraf.addColor{
+    background-color: slategray;
+    opacity: 1;
+}
